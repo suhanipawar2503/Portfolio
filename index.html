@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suhani Pawar | Professional Portfolio</title>
+
+    <!-- Meta Tags -->
+    <meta name="description" content="Portfolio of Suhani Rajaram Pawar - Computer Science Student and Developer.">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+
+<body>
+    <!-- Scroll Progress Bar -->
+    <div id="scrollProgressBar" class="scroll-progress-bar"></div>
+
+    <!-- Animated Background -->
+    <div class="bg-animation">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+    </div> <!-- Navigation -->
+    <nav id="mainNav">
+        <div class="container nav-content">
+            <a href="#hero" class="logo">Suhani Pawar</a>
+
+            <ul class="nav-links">
+                <li><a href="#hero" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#internship" class="nav-link">Internships</a></li>
+                <li><a href="#education" class="nav-link">Education</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <button id="themeToggle" class="theme-toggle" aria-label="Toggle Theme">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <div class="hamburger" id="navToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section">
+        <div class="container hero-grid reveal">
+            <div class="opp-badge">
+                <i class="fas fa-bolt"></i> Open to Opportunities
+            </div>
+            <div class="hero-img">
+                <img src="assets/suhani.jpg" alt="Suhani Pawar" class="profile-img">
+            </div>
+            <div class="hero-text">
+                <h1>Suhani Rajaram Pawar</h1>
+                <h2 id="typingText"></h2>
+                <p class="hero-description">
+                    Building web applications. Passionate about clean code & problem-solving. Dedicated to crafting
+                    professional digital experiences.
+                </p>
+                <div class="hero-btns">
+                    <button class="btn btn-primary" onclick="window.open('resume.pdf', '_blank')">
+                        <i class="fas fa-download"></i> Download Resume
+                    </button>
+                    <a href="#contact" class="btn btn-outline">
+                        <i class="fas fa-paper-plane"></i> Let's Connect
+                    </a>
+                </div>
+                <div class="hero-socials" style="margin-top: 30px; display: flex; gap: 20px; justify-content: center;">
+                    <a href="https://linkedin.com/in/suhani-pawar" target="_blank" class="theme-toggle"><i
+                            class="fab fa-linkedin-in"></i></a>
+                    <a href="https://github.com/suhanipawar2503" target="_blank" class="theme-toggle"><i
+                            class="fab fa-github"></i></a>
+                    <a href="https://wa.me/919518932662" target="_blank" class="theme-toggle"><i
+                            class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+            <div class="scroll-explore" style="margin-top: 50px;">
+                <p style="font-size: 0.8rem; color: var(--text-muted); margin-bottom: 10px;">Scroll to explore</p>
+                <i class="fas fa-chevron-down" style="color: var(--accent); animation: bounce 2s infinite;"></i>
+            </div>
+        </div>
+    </section>
+
+    <style>
+        @keyframes bounce {
+
+            0%,
+            20%,
+            50%,
+            80%,
+            100% {
+                transform: translateY(0);
+            }
+
+            40% {
+                transform: translateY(-10px);
+            }
+
+            60% {
+                transform: translateY(-5px);
+            }
+        }
+    </style>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-grid">
+                <div class="about-content">
+                    <h3>Empowering Through Code</h3>
+                    <p>
+                        I am a dedicated Computer Science student with a strong foundation in software development. My
+                        journey in technology is driven by a desire to solve complex problems and create impactful
+                        solutions.
+                    </p>
+                    <p>
+                        With a focus on both Web and Android development, I strive to bridge the gap between
+                        functionality and aesthetics, ensuring every project I work on stands out for its quality and
+                        performance.
+                    </p>
+                </div>
+                <div class="stat-grid">
+                    <div class="stat-card">
+                        <h3>9.48</h3>
+                        <p>Current CGPA</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>5+</h3>
+                        <p>Projects Completed</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>91%</h3>
+                        <p>Diploma Score</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>100%</h3>
+                        <p>Tech Enthusiast</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Internship Section -->
+    <section id="internship" class="section">
+        <div class="container reveal">
+            <h2 class="section-title">Internship Experience</h2>
+            <div class="about-grid" style="grid-template-columns: 1fr; max-width: 900px; margin: 0 auto;">
+                <div class="timeline-content"
+                    style="width: 100%; border-left: 5px solid var(--accent); box-shadow: var(--shadow-md);">
+                    <div
+                        style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 20px;">
+                        <div>
+                            <h3 style="margin-bottom: 5px; color: var(--primary);">Android Intern</h3>
+                            <p style="color: var(--secondary); font-weight: 700; font-size: 1.1rem;">iGap Technologies,
+                                Kolhapur</p>
+                        </div>
+                        <span class="opp-badge"
+                            style="margin: 0; background: var(--primary); color: var(--bg-main);">July
+                            2024</span>
+                    </div>
+                    <ul style="list-style: none; padding: 0; color: var(--text-muted); font-size: 1.05rem;">
+                        <li style="margin-bottom: 12px; display: flex; gap: 12px;">
+                            <i class="fas fa-check-circle" style="color: var(--accent); margin-top: 5px;"></i>
+                            <span>Comprehensive training in <strong>Android Application Development</strong> using
+                                Java.</span>
+                        </li>
+                        <li style="margin-bottom: 12px; display: flex; gap: 12px;">
+                            <i class="fas fa-check-circle" style="color: var(--accent); margin-top: 5px;"></i>
+                            <span>Developed backend functionality using <strong>PHP</strong> and managed local databases
+                                with <strong>XAMPP</strong>.</span>
+                        </li>
+                        <li style="margin-bottom: 12px; display: flex; gap: 12px;">
+                            <i class="fas fa-check-circle" style="color: var(--accent); margin-top: 5px;"></i>
+                            <span>Integrated real-world database concepts using **SQL** for optimized data storage and
+                                retrieval.</span>
+                        </li>
+                        <li style="margin-bottom: 12px; display: flex; gap: 12px;">
+                            <i class="fas fa-check-circle" style="color: var(--accent); margin-top: 5px;"></i>
+                            <span>Focused on creating user-centric mobile interfaces with a focus on high
+                                performance.</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="section">
+        <div class="container reveal">
+            <h2 class="section-title">Education Timeline</h2>
+
+            <div class="timeline">
+                <!-- Education 1 -->
+                <div class="timeline-item reveal">
+                    <div class="timeline-badge">2025 - Present</div>
+                    <div class="timeline-content">
+                        <h3>Bachelor of Technology</h3>
+                        <p>Rajarambapu Institute of Technology</p>
+                        <p>Computer Science Engineering</p>
+                        <p>Sangli, Maharashtra</p>
+                        <p><strong>CGPA: 9.48</strong></p>
+                    </div>
+                </div>
+
+                <!-- Education 2 -->
+                <div class="timeline-item reveal">
+                    <div class="timeline-badge">2022 - 2025</div>
+                    <div class="timeline-content">
+                        <h3>Diploma in Computer Engineering</h3>
+                        <p>Govt. Residence Women Poly, Tasgaon</p>
+                        <p>Graduated with high distinction.</p>
+                        <p><strong>Percentage: 91.31%</strong></p>
+                        <p>Completed</p>
+                    </div>
+                </div>
+
+                <!-- Education 3 -->
+                <div class="timeline-item reveal">
+                    <div class="timeline-badge">2021 - 2022</div>
+                    <div class="timeline-content">
+                        <h3>SSC (10th Grade)</h3>
+                        <p>Bahuudeshiya Prashala, Kadlas</p>
+                        <p>High School Education</p>
+                        <p><strong>Percentage: 95.40%</strong></p>
+                        <p>Completed</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <div class="container reveal">
+            <h2 class="section-title">Technical Expertise</h2>
+            <div class="skills-category-grid">
+
+                <!-- Category 1 -->
+                <div class="skill-category-card">
+                    <h3 class="category-title"><i class="fas fa-laptop-code"></i> Programming</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag"><i class="fab fa-java"></i> Java</span>
+                        <span class="skill-tag"><i class="fas fa-code"></i> C++ / OOP</span>
+                        <span class="skill-tag"><i class="fab fa-python"></i> Python</span>
+                    </div>
+                </div>
+
+                <!-- Category 2 -->
+                <div class="skill-category-card">
+                    <h3 class="category-title"><i class="fas fa-globe"></i> Web Dev</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag"><i class="fab fa-html5"></i> HTML5</span>
+                        <span class="skill-tag"><i class="fab fa-css3-alt"></i> CSS3</span>
+                        <span class="skill-tag"><i class="fab fa-js"></i> JavaScript</span>
+                    </div>
+                </div>
+
+                <!-- Category 3 -->
+                <div class="skill-category-card">
+                    <h3 class="category-title"><i class="fas fa-tools"></i> Tools & DB</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag"><i class="fab fa-android"></i> Android Studio</span>
+                        <span class="skill-tag"><i class="fas fa-database"></i> SQL / MySQL</span>
+                        <span class="skill-tag"><i class="fab fa-git-alt"></i> Git</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <div class="container reveal">
+            <h2 class="section-title">Featured Work</h2>
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card">
+                    <div class="project-img-wrapper">
+                        <img src="assets/ev_mockup.png" alt="EV Charging App">
+                        <div class="project-overlay">
+                            <span class="project-type">Android App</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Find EV Charging Station</h3>
+                        <p>Locate nearby EV charging stations seamlessly with integrated real-time data.</p>
+                        <div class="project-tags">
+                            <span>Java</span>
+                            <span>Android Studio</span>
+                            <span>SQL</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card">
+                    <div class="project-img-wrapper">
+                        <img src="assets/agro_mockup.png" alt="Agro App">
+                        <div class="project-overlay">
+                            <span class="project-type">Android App</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Agro App</h3>
+                        <p>A smart solution for farmers providing critical agricultural information and resources.</p>
+                        <div class="project-tags">
+                            <span>Java</span>
+                            <span>Firebase</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card">
+                    <div class="project-img-wrapper">
+                        <img src="assets/project3.png" alt="RPS Game">
+                        <div class="project-overlay">
+                            <span class="project-type">Web Game</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Rock Paper Scissors</h3>
+                        <p>An interactive and responsive browser game built with modern front-end tech.</p>
+                        <div class="project-tags">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container reveal">
+            <h2 class="section-title">Connect With Me</h2>
+            <div class="contact-wrapper">
+
+                <!-- Contact Info -->
+                <div class="contact-info-panel">
+                    <h3>Let's collaborate!</h3>
+                    <p>I am always open to discussing new projects, creative ideas, or opportunities and suggestions.
+                    </p>
+
+                    <div class="contact-methods">
+                        <a href="mailto:suhanipawar2503@gmail.com" class="contact-method-card">
+                            <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                            <div class="contact-text">
+                                <h4>Email</h4>
+                                <span>suhanipawar2503@gmail.com</span>
+                            </div>
+                        </a>
+                        <a href="https://wa.me/919518932662" target="_blank" class="contact-method-card">
+                            <div class="contact-icon"><i class="fab fa-whatsapp"></i></div>
+                            <div class="contact-text">
+                                <h4>WhatsApp</h4>
+                                <span>+91 9518932662</span>
+                            </div>
+                        </a>
+                        <a href="tel:+919518932662" class="contact-method-card">
+                            <div class="contact-icon"><i class="fas fa-phone"></i></div>
+                            <div class="contact-text">
+                                <h4>Call Me</h4>
+                                <span>+91 9518932662</span>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="social-links-panel">
+                        <p>Find me on:</p>
+                        <div class="social-flex">
+                            <a href="https://www.linkedin.com/in/suhani-pawar" target="_blank"
+                                class="social-btn linkedin">
+                                <i class="fab fa-linkedin"></i> LinkedIn
+                            </a>
+                            <a href="https://github.com/suhanipawar2503" target="_blank" class="social-btn github">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Suhani Rajaram Pawar. Built with passion & precision.</p>
+        </div>
+    </footer>
+
+    <!-- Scroll Top Button -->
+    <button class="scroll-top" id="scrollTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- JS -->
+    <script src="script.js"></script>
+</body>
+
+</html>
